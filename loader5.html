@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+	<html lang="es-AR">
+		<head>
+			<title></title>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style type="text/css">
+				*,
+				*::before,
+				*::after {
+					box-sizing: border-box;
+					margin: 0;
+				}
+				
+				body {
+					width: 100vw;
+					height: 100vh;
+				}
+				
+				.container {
+					display: flex;
+					width: 100px;
+					height: 100px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-top: -50px;
+					margin-left: -50px;
+				//	border: 1px solid black;
+					justify-content: center;
+					animation: rotationLinear 3s infinite linear;
+				}
+				
+				.point {
+					animation: rotation 1s infinite ease-in-out;
+				}
+				
+				.point::before {
+					content: "";
+					position: absolute;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					background-color: blue;
+				}
+				
+				.point:nth-child(2)::before {
+					width: 14px;
+					height: 14px;
+				}
+				
+				.point:nth-child(3)::before {
+				width: 13px;
+				height: 13px;
+				}
+				
+				.point:nth-child(4)::before {
+				width: 12px;
+				height: 12px;
+				}
+				
+				.point:nth-child(5)::before {
+				width: 11px;
+				height: 11px;
+				}
+				
+				.point:nth-child(6)::before {
+				width: 10px;
+				height: 10px;
+				}
+				
+				.point:nth-child(7)::before {
+				width: 9px;
+				height: 9px;
+				}
+				
+				.point:nth-child(8)::before {
+				width: 8px;
+				height: 8px;
+				}
+				
+				.point:nth-child(2) {
+					animation-delay: 0.05s;
+				}
+				
+				.point:nth-child(3) {
+					animation-delay: 0.1s;
+				}
+				
+				.point:nth-child(4) {
+					animation-delay: 0.15s;
+				}
+				
+				.point:nth-child(5) {
+					animation-delay: 0.2s;
+				}
+				
+				.point:nth-child(6) {
+					animation-delay: 0.25s;
+				}
+				
+				.point:nth-child(7) {
+					animation-delay: 0.30s;
+				}
+				
+				.point:nth-child(8) {
+					animation-delay: 0.35s;
+				}
+				
+				@keyframes rotationLinear {
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+				
+				@keyframes rotation {
+					100% {
+						transform: rotate(360deg);
+					}
+				}
+			</style>
+		</head>
+		
+		<body>
+		
+			<div class="container">
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+			</div>
+		
+			<script type="text/javascript">
+			
+			</script>
+		</body>
+	</html>

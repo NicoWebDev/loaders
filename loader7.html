@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+	<html lang="es-AR">
+		<head>
+			<title></title>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<style type="text/css">
+				*,
+				*::before,
+				*::after {
+					box-sizing: border-box;
+					margin: 0;
+				}
+				
+				body {
+					width: 100vw;
+					height: 100vh;
+				}
+				
+				.container {
+					position: relative;
+					width: 100px;
+					height:100px;
+					top: 50%;
+					left:50%;
+					margin-top: -50px;
+					margin-left: -50px;
+				}
+				
+				.point {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					
+				}
+				
+				.point:nth-child(2) {
+					transform: rotate(45deg);
+				}
+				
+				.point:nth-child(3) {
+					transform: rotate(90deg);
+				}
+				
+				.point:nth-child(4) {
+					transform: rotate(135deg);
+				}
+				
+				.point:nth-child(5) {
+					transform: rotate(180deg);
+				}
+				
+				.point:nth-child(6) {
+					transform: rotate(225deg);
+				}
+				
+				.point:nth-child(7) {
+					transform: rotate(270deg);
+				}
+				
+				.point:nth-child(8) {
+					transform: rotate(315deg);
+				}
+				
+				.point::before {
+					position: absolute;
+					content: "";
+					width: 25px;
+					height: 25px;
+					background-color: #10CA80;
+					border-radius: 50%;
+					animation: scaleThis 1.2s infinite linear;
+				}
+				
+				.point:nth-child(2)::before {
+					animation-delay: 0.15s;
+				}
+				
+				.point:nth-child(3)::before {
+				animation-delay: 0.3s;
+				}
+				
+				.point:nth-child(4)::before {
+				animation-delay: 0.45s;
+				}
+				
+				.point:nth-child(5)::before {
+				animation-delay: 0.6s;
+				}
+				
+				.point:nth-child(6)::before {
+				animation-delay: 0.75s;
+				}
+				
+				.point:nth-child(7)::before {
+				animation-delay: 0.9s;
+				}
+				
+				.point:nth-child(8)::before {
+				animation-delay: 1.05s;
+				}
+				
+				@keyframes scaleThis {
+					40% {
+						transform: scale(0);
+					}
+					
+					80% {
+						transform: scale(0);
+					}
+				}
+			</style>
+		</head>
+		
+		<body>
+		
+			<div class="container">
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+				<div class="point"></div>
+			</div>
+		
+			<script type="text/javascript">
+			
+			</script>
+		</body>
+	</html>
